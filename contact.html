@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="port.css" />
+    <style>
+      /* Responsive form */
+      .main{
+        
+      }
+
+      form {
+        color: white;
+        min-height: 800px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Form label */
+.form-group label {
+  flex: 0 0 100px;
+}
+
+/* Form control */
+.form-control {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* Textarea */
+textarea.form-control {
+  min-height: 150px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  margin-left: 100px;
+}
+
+    </style>
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo"><b>Santosh</b></div>
+          <ul class="nav-list" id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div id="ham_icon">
+            <img src="./img/hamburger (1).png" alt="click" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        
+         
+          
+          
+         
+
+         
+         
+         
+        
+      </div>
+      <footer>
+        <div class="foot-container">
+          <div class="left-section">
+      
+            <div class="social">
+              <div class="social_name">Social Media sites</div>
+              <div class="social_sites">
+                <a href="#" class="sites"> <img src="./img/fb.png" alt="fb"> </a><a href="#" class="sites">
+                  <img src="./img/insta.png" alt="insta">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

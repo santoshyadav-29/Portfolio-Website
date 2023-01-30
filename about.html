@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="port.css" />
+    <style>
+      .main-container {
+        min-height: 800px;
+        margin-top: 20px;
+        max-width: 100ch;
+        color: white;
+        width: 90%;
+        margin: 0px auto;
+        display: grid;
+      }
+      .main-head {
+        
+
+        margin: 120px 20px 20px 0px;
+        max-width: 80ch;
+        
+        font-weight: lighter;
+        
+      }
+      .main-head section {
+        
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: large;
+        font-stretch: expanded;
+        
+
+
+
+       
+      }
+      .main-head text {
+        
+        
+        color: rgb(209, 191, 191);
+        
+  
+      }
+      .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        
+
+      }
+      .parent{
+        display: flex;
+        
+      }
+      .child{
+        width:100px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      #one{
+        
+        height: 20px;
+        width: 10%;
+        background-color: aqua;
+        transition: all 1s;
+
+      }
+      #one:hover{
+        width:80%;
+        background-color: rgb(21, 255, 0);
+
+        
+        
+      }
+      
+      #two{
+        height: 20px;
+        width: 50%;
+        transition: all 1s ease-out;
+
+        background-color: aqua;
+      }
+      #two:hover{
+        width:80%;
+        background-color: rgb(229, 255, 0);
+        
+        
+      }
+      #three{
+        height: 20px;
+        width: 35%;
+        background-color: aqua;
+        transition: all 1s ease-out;
+
+      }
+      #three:hover{
+        width:80%;
+        background-color: rgb(255, 128, 0);
+        
+        
+      }
+      
+
+    </style>
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo"><b>Santosh</b></div>
+          <ul class="nav-list" id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div id="ham_icon">
+            <img src="./img/hamburger (1).png" alt="click" />
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main-head">
+          <section>
+            
+              “Every great developer you know got there by solving problems they
+              were unqualified to solve until they actually did it! "
+            
+          </section>
+          <text>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            magnam dolorem natus id facilis quis error ducimus? Placeat quam hic
+            non voluptates blanditiis modi nam rem quisquam saepe doloremque enim
+            dignissimos quasi tempora magnam pariatur nobis dolorum maxime, vero
+            distinctio temporibus nisi minima culpa. Eum iusto ducimus quas odit
+            inventore.
+          </text>
+        </div>
+        <div class="skills"> <h1>Skills</h1><b></b> 
+          <div class="parent"><div class="child">React</div>
+          <div class="child " id="one"></div></div>
+          <div class="parent"><div class="child">HTML/CSS</div>
+          <div class="child" id="two"></div></div>
+          <div class="parent" ><div class="child">JavaScript</div>
+          <div class="child" id="three"></div></div>
+                </div>
+        </div>
+
+      <footer>
+        <div class="foot-container">
+          <div class="left-section">
+            <div class="social">
+              <div class="social_name">Social Media sites</div>
+              <div class="social_sites">
+                <a href="#" class="sites">
+                  <img src="./img/fb.png" alt="fb" /> </a
+                ><a href="#" class="sites">
+                  <img src="./img/insta.png" alt="insta" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

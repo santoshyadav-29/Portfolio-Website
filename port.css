@@ -1,0 +1,324 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+}
+
+a {
+    color: var(--color-grey0)
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+.layout {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+
+}
+
+.header {
+
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+
+
+
+
+
+
+}
+
+
+.navbar {
+
+
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+}
+
+.logo {
+    font-size: 1.25rem;
+
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    /* box-shadow: 0px 3px 3px rgb(106, 106, 106); */
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+
+}
+
+.logo:hover {
+    color: #333;
+    border-inline-start: solid 5px whitesmoke;
+
+}
+
+.nav-list {
+    gap: 2em;
+    list-style: none;
+    display: flex;
+    margin-right: 5%;
+
+}
+
+.nav-list li a {
+    background-color: var(--color-grey-5);
+    border-radius: 20px;
+    padding: 1rem;
+    transition: all 0.4s ease-out;
+
+
+
+}
+
+.nav-list li a:hover {
+
+    background-color: var(--color-secondary);
+
+}
+
+
+
+
+.active {
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+
+}
+
+#ham_icon {
+    display: none;
+    cursor: pointer;
+
+
+}
+
+@media(max-width:800px) {
+    /* .logo {} */
+
+    .navbar {
+
+        justify-content: space-around;
+        align-items: center;
+        min-height: 300px;
+
+
+
+
+    }
+
+    #ham_icon {
+        display: block;
+
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+
+
+
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+
+    .right-section ul {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+/* main-CSS */
+.main {
+    box-shadow: 1px 1px 1px black;
+}
+
+.hero-section {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    min-height: 800px;
+
+
+}
+
+.hero-section-left {
+    width: 100vw;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero-section-right {
+    width: 100vw;
+    text-align: center;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--color-grey-1);
+
+}
+
+.profile-image {
+    width: 70%;
+    border-radius: 10px;
+
+
+    /* border-radius: 50%; */
+    margin-bottom: 4em;
+    filter: grayscale(100%);
+    transition: all 0.6s ease-out;
+
+
+
+}
+
+.profile-image:hover {
+    filter: grayscale(10%);
+    width: 75%;
+
+
+
+
+
+}
+
+
+.intro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.intro_name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--color-secondary)
+}
+
+.intro_bio {
+    max-width: 60ch;
+    margin: 0px auto;
+
+}
+
+
+
+.cv {
+
+    padding: .5em 2em;
+    background-color: var(--color-secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+
+    margin: auto;
+    transition: all 0.5s ease-out;
+
+
+}
+
+.cv:hover {
+    color: #333;
+
+}
+
+
+/* footer CSS */
+footer {
+
+    color: #fff;
+    padding: 20px 0;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.left-section .social_name {
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+
+
+}
+
+.right-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+
+}
+
+
+.right-section ul li a {
+    transition: all 1s;
+}
+
+.right-section ul li a:hover {
+    text-decoration: underline;
+    color: rgb(161, 153, 153);
+
+}
+
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
