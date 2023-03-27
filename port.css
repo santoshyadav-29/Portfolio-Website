@@ -30,87 +30,71 @@ a {
 }
 
 body {
+    
+
     background-color: var(--color-primary);
+    transition: all 0.5s ease-in-out;
 }
 
-.layout {
 
-
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-
-}
 
 .header {
+    background-color: var(--color-primary);
 
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-
-
-
-
-
-
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
+/* onscroll change the header opacity to 50% */
 
 .navbar {
-
-
-
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-
-
 }
 
-.logo {
-    font-size: 1.25rem;
 
-    background-color: var(--color-secondary);
-    color: white;
-    border-radius: 10px;
-    padding: 0.5rem;
-    /* box-shadow: 0px 3px 3px rgb(106, 106, 106); */
-    cursor: pointer;
-    transition: all 0.5s ease-out;
-
-
+.logo img{
+    border: solid rgb(82, 81, 81) 1px;
+    padding: 0.3em;
+    width: 10%;
+    border-radius: 50%;
 }
 
-.logo:hover {
-    color: #333;
-    border-inline-start: solid 5px whitesmoke;
-
+.logo img:hover {
+    border: solid rgb(228, 223, 223)  3px;
+    padding: 0.1em;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-list {
-    gap: 2em;
+    gap: 1em;
     list-style: none;
     display: flex;
-    margin-right: 5%;
-
+    justify-content: baseline;
+    align-items: center;
 }
 
 .nav-list li a {
+    display: block;
     background-color: var(--color-grey-5);
-    border-radius: 20px;
-    padding: 1rem;
-    transition: all 0.4s ease-out;
+    border-radius: 11px;
+    padding: 0.7em;
+    transition: all 0.4s ease-in-out;
 
 
 
 }
 
 .nav-list li a:hover {
+    color:#27AE60;
 
-    background-color: var(--color-secondary);
+    /* background-color: var(--color-secondary); */
+    outline:solid var(--color-secondary) 1px;
 
 }
 
@@ -205,22 +189,31 @@ body {
 }
 
 .profile-image {
-    width: 70%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius:5% 5% 100% 5%;
+    opacity: 0.5;
 
 
     /* border-radius: 50%; */
     margin-bottom: 4em;
-    filter: grayscale(100%);
+    
     transition: all 0.6s ease-out;
+    padding: 0.3em;
+    
+    transition: all 0.5s ease-in-out;
 
 
 
 }
 
 .profile-image:hover {
-    filter: grayscale(10%);
-    width: 75%;
+    border-radius:300% 300% 5% 5%;
+    opacity: 1;
+    /* transform: scale(110%); */
+    
+    outline: solid green 3px;
+   
+   
 
 
 
