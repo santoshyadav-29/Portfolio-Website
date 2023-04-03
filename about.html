@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./img/AvatarMaker (1).svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/AvatarMaker (1).svg"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link
@@ -23,93 +27,79 @@
         display: grid;
       }
       .main-head {
-        
-
         margin: 120px 20px 20px 0px;
         max-width: 80ch;
-        
+
         font-weight: lighter;
-        
       }
       .main-head section {
-        
         margin-bottom: 30px;
         font-weight: 600;
         font-size: large;
         font-stretch: expanded;
-        
-
-
-
-       
       }
       .main-head text {
-        
-        
         color: rgb(209, 191, 191);
-        
-  
       }
-      .skills{
+      .skills {
         display: flex;
         flex-direction: column;
         gap: 2em;
-        
-
       }
-      .parent{
+      .parent {
         display: flex;
-        
+        margin-bottom: 10px;
       }
-      .child{
-        width:100px;
+      .child {
+        width: 100px;
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
       }
-      #one{
-        
+      #one {
         height: 20px;
-        width: 10%;
+        width: 40%;
         background-color: aqua;
         transition: all 1s;
-
       }
-      #one:hover{
-        width:80%;
+      #one:hover {
+        width: 80%;
         background-color: rgb(21, 255, 0);
-
-        
-        
       }
-      
-      #two{
+
+      #two {
+        height: 20px;
+        width: 70%;
+        transition: all 1s ease-out;
+
+        background-color: aqua;
+      }
+      #two:hover {
+
+        width: 80%;
+        background-color: rgb(229, 255, 0);
+      }
+      #three {
         height: 20px;
         width: 50%;
-        transition: all 1s ease-out;
-
-        background-color: aqua;
-      }
-      #two:hover{
-        width:80%;
-        background-color: rgb(229, 255, 0);
-        
-        
-      }
-      #three{
-        height: 20px;
-        width: 35%;
         background-color: aqua;
         transition: all 1s ease-out;
-
       }
-      #three:hover{
-        width:80%;
+      #three:hover {
+        width: 80%;
         background-color: rgb(255, 128, 0);
-        
-        
       }
-      
+      .intro__images img{
+        opacity: 0.3;
+        width: 10%;
 
+        min-width: 50px;
+        min-height: 50px;
+      }
+      .intro__images{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     </style>
     <script defer src="nav.js"></script>
   </head>
@@ -117,7 +107,7 @@
     <div class="layout">
       <div class="header">
         <div class="navbar">
-          <div class="logo"><img src="./img/AvatarMaker (1).svg" alt=""></div>
+          <div class="logo"><img src="./img/AvatarMaker (1).svg" alt="" /></div>
           <ul class="nav-list" id="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About me</a></li>
@@ -132,30 +122,53 @@
       <div class="main-container">
         <div class="main-head">
           <section>
-            
-              “Every great developer you know got there by solving problems they
-              were unqualified to solve until they actually did it! "
-            
+            “Every great developer you know got there by solving problems they
+            were unqualified to solve until they actually did it! "
           </section>
           <text>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             magnam dolorem natus id facilis quis error ducimus? Placeat quam hic
-            non voluptates blanditiis modi nam rem quisquam saepe doloremque enim
-            dignissimos quasi tempora magnam pariatur nobis dolorum maxime, vero
-            distinctio temporibus nisi minima culpa. Eum iusto ducimus quas odit
-            inventore.
+            non voluptates blanditiis modi nam rem quisquam saepe doloremque
+            enim dignissimos quasi tempora magnam pariatur nobis dolorum maxime,
+            vero distinctio temporibus nisi minima culpa. Eum iusto ducimus quas
+            odit inventore.
           </text>
         </div>
-        <div class="skills"> <h1>Skills</h1><b></b> 
-          <div class="parent"><div class="child">React</div>
-          <div class="child " id="one"></div></div>
-          <div class="parent"><div class="child">HTML/CSS</div>
-          <div class="child" id="two"></div></div>
-          <div class="parent" ><div class="child">JavaScript</div>
-          <div class="child" id="three"></div></div>
-                </div>
+        <div class="skills">
+          <h1>Skills</h1>
+          
+          <div class="parent">
+            <div class="child">React</div>
+            <div class="child" id="one"></div>
+          </div>
+          <div class="parent">
+            <div class="child">HTML/CSS</div>
+            <div class="child" id="two"></div>
+          </div>
+          <div class="parent">
+            <div class="child">JavaScript</div>
+            <div class="child" id="three"></div>
+          </div>
         </div>
-
+        <div class="intro__section">
+          <section class="intro__images">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"
+              alt="image"
+            />
+  
+            <img
+              src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_960_720.png"
+              alt="image"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
+              alt="image"
+            />
+          </section>
+        </div>
+      </div>
+      
       <footer>
         <div class="foot-container">
           <div class="left-section">
@@ -163,9 +176,15 @@
               <div class="social_name">Social Media sites</div>
               <div class="social_sites">
                 <a href="#" class="sites">
-                  <img src="./img/fb.png" alt="fb" /> </a
+                  Facebook</a
                 ><a href="#" class="sites">
-                  <img src="./img/insta.png" alt="insta" />
+                  Instagram
+                </a>
+                <a href="#" class="sites">
+                  Github
+                </a>
+                <a href="#" class="sites">
+                  LinkedIn
                 </a>
               </div>
             </div>
